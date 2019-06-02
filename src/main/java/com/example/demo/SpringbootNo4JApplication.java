@@ -31,6 +31,7 @@ public class SpringbootNo4JApplication {
     CommandLineRunner demo(PersonRepository personRepository) {
         return args -> {
 
+            /*
             personRepository.deleteAll();
 
             PersonModel greg = new PersonModel("Greg");
@@ -47,7 +48,6 @@ public class SpringbootNo4JApplication {
             personRepository.save(roy);
             personRepository.save(craig);
 
-            /*
             greg = personRepository.findByName(greg.getName());
             greg.worksWith(roy);
             greg.worksWith(craig);
